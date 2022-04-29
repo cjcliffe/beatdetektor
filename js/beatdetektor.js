@@ -173,6 +173,7 @@ BeatDetektor.prototype.reset = function()
 	
 	this.ma_quality_avg = 0;
 	this.ma_quality_total = 0;
+	this.maa_quality_avg = 0;
 	
 	this.bpm_contest = new Array();
 	this.bpm_contest_lo = new Array();
