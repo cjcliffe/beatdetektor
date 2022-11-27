@@ -9,7 +9,7 @@ let windowChk = (!globalThis.hasOwnProperty('window') ? new Object() : window ??
 function save_output(data){
   let dataF = data.global
   if (dataF.hasOwnProperty('global')){delete dataF.global}
-  fs.writeFileSync(timestamp+'_log.json', JSON.stringify(dataF, null, 4), e=>console.error(e))
+  fs.writeFileSync(`./logs/${timestamp}_log.json`, JSON.stringify(dataF, null, 4), e=>console.error(e))
 }
 
 bd_low = new BeatDetektor(48,95);
