@@ -660,3 +660,6 @@ BeatDetektor.modules.vis.VU.prototype.getLevel = function(x)
 {
 	return this.vu_levels[x];
 }
+
+
+module.exports.BeatDetektor = this
